@@ -48,7 +48,7 @@ thenumber = random.randrange(1, 101)
 hintslist = hints(thenumber)
 previoushints = []
 
-while not guessed:
+while not guessed and guesses != 0:
     print("Guess a number\nYou have", guesses, "guesses left.")
     print("Previous hints: ", previoushints)
     idx = random.randrange(0, len(hintslist))
