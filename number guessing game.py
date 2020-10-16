@@ -63,5 +63,8 @@ while not guessed and guesses != 0:
         guesses = guesses - 1
         print("Wrong!\n")
 
-print("\nCongratulations! You guessed the number")
+if guessed == True:
+    print("\nCongratulations! You guessed the number")
+else:
+    print("You failed to guess the number.")
 
